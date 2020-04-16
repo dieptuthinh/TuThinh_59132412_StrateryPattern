@@ -1,6 +1,6 @@
 package app.Interface;
 
-import app.Class.SinhVien;
+import app.Lop.*;
 
 public class SoSanhTheoTen implements ISoSanh<SinhVien> {
     @Override
@@ -21,3 +21,4 @@ public class SoSanhTheoTen implements ISoSanh<SinhVien> {
         
     }
 }
+

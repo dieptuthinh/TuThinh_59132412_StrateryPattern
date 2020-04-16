@@ -1,5 +1,6 @@
-package app.Class;
+package app.Lop;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class SinhVien {
@@ -21,18 +22,18 @@ public class SinhVien {
 	public void setHoTen(String hoTen) {
 		this.hoTen = hoTen;
 	}
-	public Date getNgaySinh() {
-		return ngaySinh;
-	}
-	public void setNgaySinh(Date ngaySinh) {
-		this.ngaySinh = ngaySinh;
-	}
+
 	public float getDiemTB() {
 		return diemTB;
 	}
 	public void setDiemTB(float diemTB) {
 		this.diemTB = diemTB;
-	}
+    }
+    
+    public String getThongTin() {
+        SimpleDateFormat formaterDate = new SimpleDateFormat("dd/MM/yyy");
+        return "Họ tên: " + hoTen + ", ngày sinh: " + formaterDate.format(ngaySinh) + ", điểm TB: " + diemTB;
+    }
 
     
 }
